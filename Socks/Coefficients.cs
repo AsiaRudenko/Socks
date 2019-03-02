@@ -1,4 +1,6 @@
-﻿namespace Socks
+﻿//hello!
+
+namespace Socks
 {
     public static class Coefficients
     {
