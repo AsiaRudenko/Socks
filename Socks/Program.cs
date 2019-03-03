@@ -7,6 +7,7 @@ namespace Socks
     {
         static void Main(string[] args)
         {
+            //read the input
             double footLength = ReadInput.ReadLength();
 
             //TODO: also add diagnostics from shoesize

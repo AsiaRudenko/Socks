@@ -5,13 +5,19 @@ static internal class Math
 {
     public static void DoTheMath(double footLength, Size size)
     {
+        //how long should the fool knitted foot be
         double SockLength_Mm = footLength / Coefficients.k_length;
 
+        //how many rows do toes and heel take
         double ToesAndHeel_Rows = CountToes(size.start / 4, size.oneNeedle) + size.heel;
+
+        //how many millimeters do toes and heel take
         double ToesAndHeel_Mm = Converters.RowsToMillimeters(ToesAndHeel_Rows);
 
+        //how many millimeters should you knit between toes and heel
         double SockLength_Straight_Mm = SockLength_Mm - ToesAndHeel_Mm;
 
+        //how many rows does it take
         double SockLength_Straight_Rows = Converters.MillimetersToRows(SockLength_Straight_Mm);
 
         //TODO: better converter
