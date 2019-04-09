@@ -11,5 +11,13 @@ namespace Socks
 
             return Convert.ToDouble(length);
         }
+        
+        public static int ReadSize()
+        {
+            Console.WriteLine("Please enter the shoe size (EU): ");
+            var shoeSize = Console.ReadLine();
+
+            return Convert.ToInt32(shoeSize);
+        }
     }
 }
