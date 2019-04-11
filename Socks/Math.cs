@@ -44,7 +44,7 @@ static internal class Math
 	    double elastic = System.Math.Ceiling(0.4 * size.calf);
 	    size.elastic = (int) elastic;
 
-	    int elasticLoops = (int) ((size.oneNeedle * 4) * 0.30);
+	    int elasticLoops = (int) ((size.oneNeedle * 4) * 0.2 + size.oneNeedle * 4);
 
 	    double remainder = elasticLoops % 4;
 
@@ -54,7 +54,7 @@ static internal class Math
 		    remainder = elasticLoops % 4;
 	    }
 
-		int elasticLoopsToAdd = (elasticLoops - size.oneNeedle) * 4;
+		int elasticLoopsToAdd = (elasticLoops / 4 - size.oneNeedle) * 4;
 
 		size.elasticLoopsToAdd = elasticLoopsToAdd;
     }
