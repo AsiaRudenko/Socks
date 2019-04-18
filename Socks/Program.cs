@@ -3,8 +3,8 @@ using System.Reflection.Metadata.Ecma335;
 
 namespace Socks
 {
-    enum InputLength { l, L, Length, length }
-    enum InputSize { s, S, Size, size }
+    enum InputLength { l, L, Length, length, д, Д }
+    enum InputSize { s, S, Size, size, ы, Ы }
 
     class Program
     {

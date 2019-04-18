@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\MyTestProjects\\Socks\\Socks\\Socks.csproj": {}
+    "F:\\MyTestProjects\\Socks\\WebApp\\WebApp.csproj": {}
   },
   "projects": {
-    "F:\\MyTestProjects\\Socks\\Socks\\Socks.csproj": {
+    "F:\\MyTestProjects\\Socks\\WebApp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\MyTestProjects\\Socks\\Socks\\Socks.csproj",
-        "projectName": "Socks",
-        "projectPath": "F:\\MyTestProjects\\Socks\\Socks\\Socks.csproj",
+        "projectUniqueName": "F:\\MyTestProjects\\Socks\\WebApp\\WebApp.csproj",
+        "projectName": "WebApp",
+        "projectPath": "F:\\MyTestProjects\\Socks\\WebApp\\WebApp.csproj",
         "packagesPath": "C:\\Users\\alexandra.rudenko\\.nuget\\packages\\",
-        "outputPath": "F:\\MyTestProjects\\Socks\\Socks\\obj\\",
+        "outputPath": "F:\\MyTestProjects\\Socks\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\ProgramData\\Xamarin\\NuGet\\",
@@ -52,11 +52,26 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.9, )"
             }
           },
           "imports": [
