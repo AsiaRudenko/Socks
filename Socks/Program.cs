@@ -1,37 +1,55 @@
-﻿using System;
-using System.Reflection.Metadata.Ecma335;
+﻿// © 2019 Company name. All rights reserved...
+
+using System;
 
 namespace Socks
 {
-    enum InputLength { l, L, Length, length, д, Д }
-    enum InputSize { s, S, Size, size, ы, Ы }
-
-    class Program
+    internal enum InputLength
     {
-        static void Main(string[] args)
+        l,
+        L,
+        Length,
+        length,
+        д,
+        Д
+    }
+
+    internal enum InputSize
+    {
+        s,
+        S,
+        Size,
+        size,
+        ы,
+        Ы
+    }
+
+    internal class Program
+    {
+        private static void Main(string[] args)
         {
             //read the input
             Console.WriteLine("Hi! Please type L to enter foot length or S to enter shoe size:");
-            string str = Console.ReadLine();
+            var str = Console.ReadLine();
 
             InputLength inputLength;
             InputSize inputSize;
-            Size size = new Size();
+            var size = new Size();
 
             if (Enum.IsDefined(typeof(InputLength), str))
             {
-				//Use foot length
-				double footLength = ReadInput.ReadLength();
-	            size = DealWithSizes.DetermineTheSize(footLength);
-			}
-			else if (Enum.IsDefined(typeof(InputSize), str))
+                //Use foot length
+                var footLength = ReadInput.ReadLength();
+                size = DealWithSizes.DetermineTheSize(footLength);
+            }
+            else if (Enum.IsDefined(typeof(InputSize), str))
             {
-				//Use shoe size
-				int shoeSize = ReadInput.ReadSize();
-	            size = DealWithSizes.DetermineTheSize(shoeSize);
+                //Use shoe size
+                var shoeSize = ReadInput.ReadSize();
+                size = DealWithSizes.DetermineTheSize(shoeSize);
             }
 
-            size.heel = (size.oneNeedle * 2) / 3;
+            size.heel = size.oneNeedle * 2 / 3;
 
             Math.DoTheMath(size);
 
@@ -40,8 +58,9 @@ namespace Socks
                               "Work {2} rows until you start the heel. \n" +
                               "Make a heel with {3} loops on each side. \n" +
                               "Work {4} rows for calf. Add {8} loops on each needle. Work {5} rows for elastic.\n" +
-                              "Good luck!", 
-                size.start, size.oneNeedle, size.foot, size.heel, size.calf, size.elastic, size.shoe1, size.shoe2, size.elasticLoopsToAdd / 4
+                              "Good luck!",
+                size.start, size.oneNeedle, size.foot, size.heel, size.calf, size.elastic, size.shoe1, size.shoe2,
+                size.elasticLoopsToAdd / 4
             );
         }
     }

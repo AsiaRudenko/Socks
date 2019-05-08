@@ -1,4 +1,6 @@
-﻿namespace WebApplication2
+﻿// © 2019 Company name. All rights reserved...
+
+namespace WebApplication2
 {
     public abstract class Class1
     {
@@ -9,7 +11,6 @@
     {
         public override void Foo()
         {
-            
         }
     }
 
@@ -18,7 +19,7 @@
     {
         public void Bar()
         {
-            Class2 myClass2 = new Class2();
+            var myClass2 = new Class2();
             myClass2.Foo();
         }
     }

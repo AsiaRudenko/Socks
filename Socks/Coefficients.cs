@@ -1,4 +1,4 @@
-﻿//hello!
+﻿// © 2019 Company name. All rights reserved...
 
 namespace Socks
 {

@@ -1,4 +1,6 @@
-﻿using System;
+﻿// © 2019 Company name. All rights reserved...
+
+using System;
 
 namespace Socks
 {
@@ -11,7 +13,7 @@ namespace Socks
 
             return Convert.ToDouble(length);
         }
-        
+
         public static int ReadSize()
         {
             Console.WriteLine("Please enter the shoe size (EU): ");
