@@ -1,4 +1,3 @@
-F:\MyTestProjects\Socks\Socks\obj\Debug\netcoreapp2.1\Socks.csprojAssemblyReference.cache
 F:\MyTestProjects\Socks\Socks\obj\Debug\netcoreapp2.1\Socks.csproj.CoreCompileInputs.cache
 F:\MyTestProjects\Socks\Socks\obj\Debug\netcoreapp2.1\Socks.AssemblyInfoInputs.cache
 F:\MyTestProjects\Socks\Socks\obj\Debug\netcoreapp2.1\Socks.AssemblyInfo.cs

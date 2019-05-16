@@ -2,9 +2,15 @@
 
 namespace Socks
 {
-    public static class Coefficients
+    public class Coefficients
     {
-        public static double k_length = 1.125;
-        public static double k_width = 1.1;
+        public double K_height;
+        public double K_width;
+
+        public Coefficients(int sampleWidth, int stretchedSampleWidth, int sampleHeight, int stretchedSampleHeight)
+        {
+            K_height = stretchedSampleHeight / sampleHeight;
+            K_width = stretchedSampleWidth / sampleWidth;
+        }
     }
 }

@@ -7,8 +7,17 @@ internal static class Math
 {
     public static void DoTheMath(Size size)
     {
-        //how long should the fool knitted foot be
-        var SockLength_Mm = size.footLength / Coefficients.k_length;
+        //compute the coefficients
+        var sample = ReadInput.ReadSample();
+        Coefficients myCoefficients = new Coefficients(sample.sampleWidth, sample.sampleHeight, sample.stretchedSampleWidth, sample.sampleHeight);
+
+        //how long should the knitted foot be
+        var SockLength_Mm = size.footLength / myCoefficients.K_height;
+
+        //TODO: add foot width to the hardcoded data
+        //TODO: compute the width
+        //TODO: compute start based on width
+        //TODO: apply coefficient to the width
 
         //how many rows do toes and heel take
         var ToesAndHeel_Rows = CountToes(size.start / 4, size.oneNeedle) + size.heel;
@@ -24,9 +33,14 @@ internal static class Math
 
         //TODO: better converter
         size.foot = Convert.ToInt32(SockLength_Straight_Rows);
+
+        //how high should the calf be
         //TODO: better converter
+        //TODO: review the height (proportion)
         size.calf = (int) CountCalf(SockLength_Straight_Rows);
 
+        //the elastic
+        //TODO: review the height (proportion)
         CountElastic(size);
     }
 
