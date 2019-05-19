@@ -1,17 +1,27 @@
-// © 2019 Company name. All rights reserved...
+// ï¿½ 2019 Company name. All rights reserved...
 
 namespace Socks
 {
     internal static class Converters
     {
-        public static double RowsToMillimeters(double rows)
+        public static double RowsToMillimeters(double rows, double sampleHeight, double sampleRows)
         {
-            return rows * 120 / 40;
+            return rows * sampleHeight / sampleRows;
         }
 
-        public static double MillimetersToRows(double millimeters)
+        public static double MillimetersToRows(double millimeters, double sampleHeight, double sampleRows)
         {
-            return millimeters * 40 / 120;
+            return millimeters * sampleRows / sampleHeight;
+        }
+
+        public static double LoopsToMillimeters(double loops, double sampleWidth, double sampleLoops)
+        {
+            return loops * sampleWidth / sampleLoops;
+        }
+        
+        public static double MillimetersToLoops(double millimeters, double sampleWidth, double sampleLoops)
+        {
+            return (millimeters * sampleLoops) / sampleWidth;
         }
     }
 }

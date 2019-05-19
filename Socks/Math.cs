@@ -1,4 +1,4 @@
-// © 2019 Company name. All rights reserved...
+// ï¿½ 2019 Company name. All rights reserved...
 
 using System;
 using Socks;
@@ -8,31 +8,36 @@ internal static class Math
     public static void DoTheMath(Size size)
     {
         //compute the coefficients
-        var sample = ReadInput.ReadSample();
-        Coefficients myCoefficients = new Coefficients(sample.sampleWidth, sample.sampleHeight, sample.stretchedSampleWidth, sample.sampleHeight);
+        Sample sample = ReadInput.ReadSample();
+        
+        
+        Coefficients myCoefficients = new Coefficients(sample.width, sample.widthStretched, sample.height, sample.heightStretched);
 
-        //how long should the knitted foot be
-        var SockLength_Mm = size.footLength / myCoefficients.K_height;
+        //how long and wide should the knitted foot be
+        double SockLength_Mm = size.footLength / myCoefficients.KStretchHeight;
+        
+        double SockDiameter_Mm = size.footDiameter / myCoefficients.KStretchWidth;
+        int SockDiameter_Loops = (int) System.Math.Round(Converters.MillimetersToLoops(SockDiameter_Mm, sample.width, sample.loops), 0);
 
-        //TODO: add foot width to the hardcoded data
-        //TODO: compute the width
-        //TODO: compute start based on width
-        //TODO: apply coefficient to the width
+        SockDiameter_Loops = MakeItFour.MakeItDivideableByFour(SockDiameter_Loops);
+        
+        size.oneNeedle = SockDiameter_Loops / 4;
+        size.start = size.oneNeedle * 2;
+        
+        //how many rows do toes and heelHeightRows take
+        var ToesAndHeel_Rows = CountToes(size.start / 4, size.oneNeedle) + size.heelHeightRows;
 
-        //how many rows do toes and heel take
-        var ToesAndHeel_Rows = CountToes(size.start / 4, size.oneNeedle) + size.heel;
+        //how many millimeters do toes and heelHeightRows take
+        var ToesAndHeel_Mm = Converters.RowsToMillimeters(ToesAndHeel_Rows, sample.height, sample.rows);
 
-        //how many millimeters do toes and heel take
-        var ToesAndHeel_Mm = Converters.RowsToMillimeters(ToesAndHeel_Rows);
-
-        //how many millimeters should you knit between toes and heel
+        //how many millimeters should you knit between toes and heelHeightRows
         var SockLength_Straight_Mm = SockLength_Mm - ToesAndHeel_Mm;
 
         //how many rows does it take
-        var SockLength_Straight_Rows = Converters.MillimetersToRows(SockLength_Straight_Mm);
+        var SockLength_Straight_Rows = Converters.MillimetersToRows(SockLength_Straight_Mm, sample.height, sample.rows);
 
         //TODO: better converter
-        size.foot = Convert.ToInt32(SockLength_Straight_Rows);
+        size.footLengthRows = Convert.ToInt32(SockLength_Straight_Rows);
 
         //how high should the calf be
         //TODO: better converter

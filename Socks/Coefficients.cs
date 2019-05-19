@@ -4,13 +4,16 @@ namespace Socks
 {
     public class Coefficients
     {
-        public double K_height;
-        public double K_width;
+        public double KStretchHeight;
+        public double KStretchWidth;
 
-        public Coefficients(int sampleWidth, int stretchedSampleWidth, int sampleHeight, int stretchedSampleHeight)
+        public double KRows;
+        public double KLoops;
+        
+        public Coefficients(double sampleWidth, double stretchedSampleWidth, double sampleHeight, double stretchedSampleHeight)
         {
-            K_height = stretchedSampleHeight / sampleHeight;
-            K_width = stretchedSampleWidth / sampleWidth;
+            KStretchHeight = stretchedSampleHeight / sampleHeight;
+            KStretchWidth = stretchedSampleWidth / sampleWidth;
         }
     }
 }

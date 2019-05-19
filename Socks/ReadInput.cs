@@ -8,7 +8,7 @@ namespace Socks
     {
         public static double ReadLength()
         {
-            Console.WriteLine("Please enter the foot length in mm: ");
+            Console.WriteLine("Please enter the footLengthRows length in mm: ");
             var length = Console.ReadLine();
 
             return Convert.ToDouble(length);
@@ -22,20 +22,31 @@ namespace Socks
             return Convert.ToInt32(shoeSize);
         }
 
-        public static (int sampleWidth, int sampleHeight, int stretchedSampleWidth, int stretchedSampleHeight) ReadSample()
+        public static Sample ReadSample()
         {
             Console.WriteLine();
             Console.WriteLine("Please enter the width of your sample in centimetres:");
-            int sampleWidth = Convert.ToInt32(Console.ReadLine());
+            double sampleWidth = Convert.ToDouble(Console.ReadLine());
+            
+            Console.WriteLine("How many loops are there:");
+            int sampleLoops = Convert.ToInt32(Console.ReadLine());
+            
             Console.WriteLine("And now the height in centimetres:");
-            int sampleHeight = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Now please stretch your sample a little bit to imitate it fitting the foot. Measure its width:");
-            int stretchedSampleWidth = Convert.ToInt32(Console.ReadLine());
+            double sampleHeight = Convert.ToDouble(Console.ReadLine());
+            
+            Console.WriteLine("How many rows are there:");
+            int sampleRows = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Now please stretch your sample a little bit to imitate it fitting the footLengthRows. Measure its width:");
+            double stretchedSampleWidth = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("And height:");
-            int stretchedSampleHeight = Convert.ToInt32(Console.ReadLine());
+            double stretchedSampleHeight = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Thanks!");
             Console.WriteLine();
-            return (sampleWidth, sampleHeight, stretchedSampleWidth, stretchedSampleHeight);
+            
+            Sample mySample = new Sample(sampleLoops, sampleRows, sampleWidth, sampleHeight, stretchedSampleWidth, stretchedSampleHeight);
+
+            return mySample;
         }
     }
 }
