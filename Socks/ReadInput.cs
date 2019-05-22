@@ -25,13 +25,13 @@ namespace Socks
         public static Sample ReadSample()
         {
             Console.WriteLine();
-            Console.WriteLine("Please enter the width of your sample in centimetres:");
+            Console.WriteLine("Please enter the width of your sample in millimetres:");
             double sampleWidth = Convert.ToDouble(Console.ReadLine());
             
             Console.WriteLine("How many loops are there:");
             int sampleLoops = Convert.ToInt32(Console.ReadLine());
             
-            Console.WriteLine("And now the height in centimetres:");
+            Console.WriteLine("And now the height in millimetres:");
             double sampleHeight = Convert.ToDouble(Console.ReadLine());
             
             Console.WriteLine("How many rows are there:");

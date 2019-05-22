@@ -47,18 +47,17 @@ namespace Socks
                 size = DealWithSizes.DetermineTheSize(shoeSize);
             }
 
-            size.heelHeightRows = size.oneNeedle * 2 / 3;
-
             Math.DoTheMath(size);
 
             Console.WriteLine("So. The size is {6}-{7}. You need to start with {0} loops altogether. \n" +
                               "Add the loops until you have {1} on each needle. \n" +
-                              "Work {2} rows until you start the heelHeightRows. \n" +
-                              "Make a heelHeightRows with {3} loops on each side. \n" +
+                              "Work {2} rows until you start the heel. \n" +
+                              "Make a heel with {3} loops on each side. \n" +
                               "Work {4} rows for calf. Add {8} loops on each needle. Work {5} rows for elastic.\n" +
+                              "Use a {9} marker. "+
                               "Good luck!",
-                size.start, size.oneNeedle, size.footLengthRows, size.heelHeightRows, size.calf, size.elastic, size.shoe1, size.shoe2,
-                size.elasticLoopsToAdd / 4
+                size.start, size.oneNeedle, size.footLengthRows, size.heelRows, size.calf, size.elastic, size.shoe1, size.shoe2,
+                size.elasticLoopsToAdd / 4, size.marker
             );
         }
     }

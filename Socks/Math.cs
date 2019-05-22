@@ -23,10 +23,13 @@ internal static class Math
         
         size.oneNeedle = SockDiameter_Loops / 4;
         size.start = size.oneNeedle * 2;
-        
-        //how many rows do toes and heelHeightRows take
-        var ToesAndHeel_Rows = CountToes(size.start / 4, size.oneNeedle) + size.heelHeightRows;
 
+        //how many rows do toes and heelHeightRows take
+        double heelRowsDouble = (double)size.oneNeedle * 2 / 3;
+        size.heelRows = (int) System.Math.Round(heelRowsDouble, 0);
+
+        var ToesAndHeel_Rows = CountToes(size.start / 4, size.oneNeedle) + size.heelRows;
+        
         //how many millimeters do toes and heelHeightRows take
         var ToesAndHeel_Mm = Converters.RowsToMillimeters(ToesAndHeel_Rows, sample.height, sample.rows);
 
