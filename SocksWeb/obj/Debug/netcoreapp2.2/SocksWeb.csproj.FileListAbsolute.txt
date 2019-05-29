@@ -1,0 +1,13 @@
+F:\MyTestProjects\Socks\SocksWeb\bin\Debug\netcoreapp2.2\SocksWeb.deps.json
+F:\MyTestProjects\Socks\SocksWeb\bin\Debug\netcoreapp2.2\SocksWeb.runtimeconfig.json
+F:\MyTestProjects\Socks\SocksWeb\bin\Debug\netcoreapp2.2\SocksWeb.runtimeconfig.dev.json
+F:\MyTestProjects\Socks\SocksWeb\bin\Debug\netcoreapp2.2\SocksWeb.dll
+F:\MyTestProjects\Socks\SocksWeb\bin\Debug\netcoreapp2.2\SocksWeb.pdb
+F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.csproj.CoreCompileInputs.cache
+F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.RazorAssemblyInfo.cache
+F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.RazorAssemblyInfo.cs
+F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.AssemblyInfoInputs.cache
+F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.AssemblyInfo.cs
+F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.RazorTargetAssemblyInfo.cache
+F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.dll
+F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.pdb
