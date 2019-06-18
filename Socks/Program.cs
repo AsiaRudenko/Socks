@@ -47,7 +47,13 @@ namespace Socks
                 size = DealWithSizes.DetermineTheSize(shoeSize);
             }
 
-            Math.DoTheMath(size);
+            //compute the coefficients
+            //Sample sample = ReadInput.ReadSample();
+
+            //HARDCODED FOR MY CURRENT SAMPLE
+            Sample sample = new Sample(22, 31, 75, 77, 95, 95);
+
+            Math.DoTheMath(size, sample);
 
             Console.WriteLine("So. The size is {6}-{7}. You need to start with {0} loops altogether. \n" +
                               "Add the loops until you have {1} on each needle. \n" +

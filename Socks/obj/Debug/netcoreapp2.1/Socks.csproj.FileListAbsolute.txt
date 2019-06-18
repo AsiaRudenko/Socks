@@ -19,3 +19,4 @@ F:\MyTestProjects\Socks\Socks\obj\Debug\netcoreapp2.1\Socks.AssemblyInfoInputs.c
 F:\MyTestProjects\Socks\Socks\obj\Debug\netcoreapp2.1\Socks.AssemblyInfo.cs
 F:\MyTestProjects\Socks\Socks\obj\Debug\netcoreapp2.1\Socks.dll
 F:\MyTestProjects\Socks\Socks\obj\Debug\netcoreapp2.1\Socks.pdb
+F:\MyTestProjects\Socks\Socks\obj\Debug\netcoreapp2.1\Socks.csprojAssemblyReference.cache

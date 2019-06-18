@@ -5,12 +5,9 @@ using Socks;
 
 internal static class Math
 {
-    public static void DoTheMath(Size size)
+    public static void DoTheMath(Size size, Sample sample)
     {
-        //compute the coefficients
-        Sample sample = ReadInput.ReadSample();
-        
-        
+      
         Coefficients myCoefficients = new Coefficients(sample.width, sample.widthStretched, sample.height, sample.heightStretched);
 
         //how long and wide should the knitted foot be
