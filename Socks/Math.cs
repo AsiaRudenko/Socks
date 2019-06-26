@@ -7,13 +7,11 @@ internal static class Math
 {
     public static void DoTheMath(Size size, Sample sample)
     {
-      
-        Coefficients myCoefficients = new Coefficients(sample.width, sample.widthStretched, sample.height, sample.heightStretched);
+        Coefficients myCoefficients = new Coefficients(sample);
 
         //how long and wide should the knitted foot be
-        double SockLength_Mm = size.footLength / myCoefficients.KStretchHeight;
-        
-        double SockDiameter_Mm = size.footDiameter / myCoefficients.KStretchWidth;
+        double SockLength_Mm = size.footLength / myCoefficients.KHeight(); 
+        double SockDiameter_Mm = size.footDiameter / myCoefficients.KWidth(); 
         int SockDiameter_Loops = (int) System.Math.Round(Converters.MillimetersToLoops(SockDiameter_Mm, sample.width, sample.loops), 0);
 
         SockDiameter_Loops = MakeItFour.MakeItDivideableByFour(SockDiameter_Loops);

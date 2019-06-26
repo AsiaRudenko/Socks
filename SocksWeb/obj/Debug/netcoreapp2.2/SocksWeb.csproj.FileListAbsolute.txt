@@ -11,3 +11,4 @@ F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.AssemblyInfo.c
 F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.RazorTargetAssemblyInfo.cache
 F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.dll
 F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.pdb
+F:\MyTestProjects\Socks\SocksWeb\obj\Debug\netcoreapp2.2\SocksWeb.csprojAssemblyReference.cache

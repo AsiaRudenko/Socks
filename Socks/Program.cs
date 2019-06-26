@@ -4,26 +4,6 @@ using System;
 
 namespace Socks
 {
-    internal enum InputLength
-    {
-        l,
-        L,
-        Length,
-        length,
-        д,
-        Д
-    }
-
-    internal enum InputSize
-    {
-        s,
-        S,
-        Size,
-        size,
-        ы,
-        Ы
-    }
-
     internal class Program
     {
         private static void Main(string[] args)

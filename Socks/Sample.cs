@@ -4,14 +4,48 @@ namespace Socks
 {
     public class Sample
     {
-        public int loops;
-        public int rows;
+        private int _loops;
+        private int _rows;
+        private double _width;
+        private double _height;
+        private double _widthStretched;
+        private double _heightStretched;
 
-        public double width;
-        public double height;
+        public int loops
+        {
+            get => _loops;
+            set => _loops = value;
+        }
 
-        public double widthStretched;
-        public double heightStretched;
+        public int rows
+        {
+            get => _rows;
+            set => _rows = value;
+        }
+
+        public double width
+        {
+            get => _width;
+            set => _width = value;
+        }
+
+        public double height
+        {
+            get => _height;
+            set => _height = value;
+        }
+
+        public double widthStretched
+        {
+            get => _widthStretched;
+            set => _widthStretched = value;
+        }
+
+        public double heightStretched
+        {
+            get => _heightStretched;
+            set => _heightStretched = value;
+        }
 
         public Sample(int Loops, int Rows, double Width, double Height, double WidthStretched, double HeightStretched)
         {
