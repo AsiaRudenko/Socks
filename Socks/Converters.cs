@@ -1,5 +1,3 @@
-// � 2019 Company name. All rights reserved...
-
 namespace Socks
 {
     internal static class Converters
@@ -18,10 +16,32 @@ namespace Socks
         {
             return loops * sampleWidth / sampleLoops;
         }
-        
+
         public static double MillimetersToLoops(double millimeters, double sampleWidth, double sampleLoops)
         {
             return (millimeters * sampleLoops) / sampleWidth;
+        }
+
+        public static int MakeItFour(int x)
+        {
+            double remainder = x % 4;
+
+            switch (remainder)
+            {
+                case 1:
+                    x = x - 1;
+                    break;
+                case 2:
+                    x = x + 2;
+                    break;
+                case 3:
+                    x = x + 1;
+                    break;
+                case 4:
+                    break;
+            }
+
+            return x;
         }
     }
 }

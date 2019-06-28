@@ -1,7 +1,4 @@
-﻿// © 2019 Company name. All rights reserved...
-
-
-//TODO: check all the input with setters for properties
+﻿//TODO: check all the input with setters for properties
 //TODO: mark all constant fields / properties' setters as private
 //TODO: make an indexer for Sizes?
 /*
@@ -27,8 +24,8 @@ namespace Socks
 {
     public class Coefficients
     {
-        private double kHeight { get; set; }
-        private double kWidth { get; set; }
+        private double kHeight { get; }
+        private double kWidth { get; }
 
         public double KHeight()
         {
