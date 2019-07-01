@@ -4,17 +4,18 @@ namespace Socks
 {
     internal static class Communicator
     {
-        public static void ShowResult(Size size)
+        public static void ShowResult(Size size, Sock sock)
         {
-            Console.WriteLine("So. The size is {6}-{7}. You need to start with {0} loops altogether. \n" +
-                              "Add the loops until you have {1} on each needle. \n" +
-                              "Work {2} rows until you start the heel. \n" +
-                              "Make a heel with {3} loops on each side. \n" +
-                              "Work {4} rows for calf. Add {8} loops on each needle. Work {5} rows for elastic.\n" +
+            Console.WriteLine("So. The size is {0}-{1}. You need to start with {2} loops altogether. \n" +
+                              "Add the loops until you have {3} on each needle. \n" +
+                              "Work {4} rows until you start the heel. \n" +
+                              "Make a heel with {5} loops on each side. \n" +
+                              "Work {6} rows for calf. Add {7} loops on each needle. Work {8} rows for elasticRows.\n" +
                               "Use a {9} marker. " +
                               "Good luck!",
-                size.start, size.oneNeedle, size.footLengthRows, size.heelRows, size.calf, size.elastic, size.shoe1, size.shoe2,
-                size.elasticLoopsToAdd / 4, size.marker
+                size.shoe1, size.shoe2,
+                sock.start, sock.oneNeedle, sock.length, sock.heel, sock.calf, sock.elasticLoopsToAddOnNeedle, sock.elasticRows,
+                size.marker
             );
         }
 

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Socks
+﻿namespace Socks
 {
     internal static class Program
     {
@@ -16,9 +14,9 @@ namespace Socks
             //HARDCODED FOR MY CURRENT SAMPLE
             Sample sample = new Sample(22, 31, 75, 77, 95, 95);
 
-            Math.DoTheMath(size, sample);
+            var sock = Math.DoTheMath(size, sample);
 
-            Communicator.ShowResult(size);
+            Communicator.ShowResult(size, sock);
         }
     }
 }

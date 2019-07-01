@@ -4,58 +4,60 @@ namespace Socks
 {
     internal static class Math
     {
-        public static void DoTheMath(Size size, Sample sample)
+        public static Sock DoTheMath(Size size, Sample sample)
         {
             Coefficients myCoefficients = new Coefficients(sample);
 
             //how long and wide should the knitted foot be
-            var sockLengthMm = size.footLength / myCoefficients.KHeight(); 
-            var sockDiameterMm = size.footDiameter / myCoefficients.KWidth(); 
-            var sockDiameterLoops = (int) System.Math.Round(Converters.MillimetersToLoops(sockDiameterMm, sample.width, sample.loops), 0);
-            
-            sockDiameterLoops = Converters.MakeItFour(sockDiameterLoops);
-        
-            size.oneNeedle = sockDiameterLoops / 4;
-            size.start = size.oneNeedle * 2;
+            var sockLengthMm = size.footLength / myCoefficients.KHeight();
+            var sockDiameterMm = size.footDiameter / myCoefficients.KWidth();
 
-            //how many rows do toes and heelHeightRows take
-            size.heelRows = (int) System.Math.Round((double)size.oneNeedle * 2 / 3, 0);
-            var toesAndHeelRows = CountToes(size.start / 4, size.oneNeedle) + size.heelRows;
+            //TODO: better converter
+            var sockDiameterLoops = (int) System.Math.Round(Converters.MillimetersToLoops(sockDiameterMm, sample.width, sample.loops), 0);
+            sockDiameterLoops = Converters.MakeItFour(sockDiameterLoops);
+
+            int oneNeedle = sockDiameterLoops / 4;
+            int start = oneNeedle * 2;
+            
+            //how many footRows do toes and heelHeightRows take
+            int heelRows = (int)System.Math.Round((double)oneNeedle * 2 / 3, 0);
+            
+            var toesAndHeelRows = CountToes(start / 4, oneNeedle) + heelRows;
             var toesAndHeelMm = Converters.RowsToMillimeters(toesAndHeelRows, sample.height, sample.rows);
 
-            //how many millimeters should you knit between toes and heelHeightRows and how many rows does it take
+            //how many millimeters should you knit between toes and heelHeightRows and how many footRows does it take
             var sockLengthStraightMm = sockLengthMm - toesAndHeelMm;
             var sockLengthStraightRows = Converters.MillimetersToRows(sockLengthStraightMm, sample.height, sample.rows);
-            //TODO: better converter
-            size.footLengthRows = Convert.ToInt32(sockLengthStraightRows);
+
+            int length = Convert.ToInt32(sockLengthStraightRows);
 
             //how high should the calf be
             //TODO: better converter
-            //TODO: review the height (proportion)
-            size.calf = (int) CountCalf(sockLengthStraightRows);
+            int calf = (int) CountCalf(sockLengthStraightRows);
 
-            //the elastic
-            //TODO: review the height (proportion)
-            CountElastic(size);
+            (int rows, int add) elastic = CountElastic(size, calf, oneNeedle);
+            var sock = new Sock(length, start, heelRows, calf, elastic.rows, elastic.add, oneNeedle);
+
+            return sock;
         }
 
         private static double CountToes(int start, int finish)
         {
-            //how many rows it takes to make a toe
+            //how many footRows it takes to make a toe
             return (finish - start) * 2;
         }
 
-        private static double CountCalf(double footrows)
+        private static double CountCalf(double footRows)
         {
-            return 50 * footrows / 63;
+            return 50 * footRows / 63;
         }
 
-        private static void CountElastic(Size size)
+        private static (int, int) CountElastic(Size size, int calf, int oneNeedle)
         {
-            var elastic = System.Math.Ceiling(0.4 * size.calf);
-            size.elastic = (int) elastic;
+            int elastic = (int) System.Math.Ceiling(0.4 * calf);
+            //size.elasticRows = (int) elasticRows;
 
-            var elasticLoops = (int) (size.oneNeedle * 4 * 0.2 + size.oneNeedle * 4);
+            var elasticLoops = (int) (oneNeedle * 4 * 0.2 + oneNeedle * 4);
 
             double remainder = elasticLoops % 4;
 
@@ -65,7 +67,9 @@ namespace Socks
                 remainder = elasticLoops % 4;
             }
 
-            size.elasticLoopsToAdd = (elasticLoops / 4 - size.oneNeedle) * 4;
+            //size.elasticLoopsToAddOnNeedle = (elasticLoops / 4 - size.oneNeedle) * 4;
+            int elasticLoopsToAdd = elasticLoops / 4 - oneNeedle;
+            return (elastic, elasticLoopsToAdd);
         }
     }
 }
