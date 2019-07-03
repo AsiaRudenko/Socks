@@ -1,6 +1,4 @@
-﻿// © 2019 Company name. All rights reserved...
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Socks
 {
