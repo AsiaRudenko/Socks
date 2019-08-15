@@ -17,8 +17,9 @@ namespace Socks
             sockDiameterLoops = Converters.MakeItFour(sockDiameterLoops);
 
             int oneNeedle = sockDiameterLoops / 4;
-            int start = oneNeedle * 2;
-            
+            int start = Converters.MakeItFour(oneNeedle * 2);
+            //int start = oneNeedle * 2;
+
             //how many footRows do toes and heelHeightRows take
             int heelRows = (int)System.Math.Round((double)oneNeedle * 2 / 3, 0);
             

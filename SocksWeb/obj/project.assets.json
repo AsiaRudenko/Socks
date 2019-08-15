@@ -7208,7 +7208,7 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "MiOiI9rM/SqgSpOv3DYBPU6IW9cJA/3j+lQY0HSN+1Ldc5Qwxp8exfN8XqdmGFyKUWU9vPGMcQ9Id1s8p315Jw==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
@@ -7444,7 +7444,7 @@
       ]
     },
     "runtime.native.System/4.3.0": {
-      "sha512": "c/qWt2LieNZIj1jGnVNsE2Kl23Ya2aSTBuXMD6V7k9KWr6l16Tqdwq+hJScEpWER9753NWC8h96PaVNY5Ld7Jw==",
+      "sha512": "ExHxM3p2WSXqphCNR9wb0EITL/sSI9gVFXp4gSg3Fw0wd+jhmArLfmNFxYoWDbu0yZV2f2+zZcqBV+cntTwGqw==",
       "type": "package",
       "path": "runtime.native.system/4.3.0",
       "files": [
@@ -7486,7 +7486,7 @@
       ]
     },
     "runtime.native.System.Net.Http/4.3.0": {
-      "sha512": "ZVuZJqnnegJhd2k/PtAbbIcZ3aZeITq3sj06oKfMBSfphW3HDmk/t4ObvbOk/JA/swGR0LNqMksAh/f7gpTROg==",
+      "sha512": "kzk6vOj3VzQgrwIDlaxit3UZcmue7jaxg3LUAoUHoGHkZzfJyWzgiK27tHGzpROhTqP9IcHWB7IUNVnV9UhVxQ==",
       "type": "package",
       "path": "runtime.native.system.net.http/4.3.0",
       "files": [
@@ -7500,7 +7500,7 @@
       ]
     },
     "runtime.native.System.Security.Cryptography.Apple/4.3.0": {
-      "sha512": "DloMk88juo0OuOWr56QG7MNchmafTLYWvABy36izkrLI5VledI0rq28KGs1i9wbpeT9NPQrx/wTf8U2vazqQ3Q==",
+      "sha512": "aItq6AhoTV86Y0CclfY3N363XQFVZlXJTEXCf8sTDI8dbxq5RAzhztu9FjbuegUbRrLPRGu0wcXHUOoZxh1IpQ==",
       "type": "package",
       "path": "runtime.native.system.security.cryptography.apple/4.3.0",
       "files": [
@@ -7555,7 +7555,7 @@
       ]
     },
     "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple/4.3.0": {
-      "sha512": "kVXCuMTrTlxq4XOOMAysuNwsXWpYeboGddNGpIgNSZmv1b6r/s/DPk0fYMB7Q5Qo4bY68o48jt4T4y5BVecbCQ==",
+      "sha512": "HpnpbNOGAsWWpJbOONktBTsQ5yDPceSWevbI2UIxipcKE6i9wzToStcsFH6rfsqBSIn+r+jiQZvd2lVNdIUpPA==",
       "type": "package",
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple/4.3.0",
       "files": [
@@ -8583,7 +8583,7 @@
       ]
     },
     "System.Dynamic.Runtime/4.3.0": {
-      "sha512": "SNVi1E/vfWUAs/WYKhE9+qlS6KqK0YVhnlT0HQtr8pMIA8YX3lwy3uPMownDwdYISBdmAF/2holEIldVp85Wag==",
+      "sha512": "Ph2DFjCjeWKcxBseXxhQtARuPXro+MIM0F67LM+dCj/iIbYgKhdDAzQ+DpGInaXuFh/jXc7secMC0S604QyXiQ==",
       "type": "package",
       "path": "system.dynamic.runtime/4.3.0",
       "files": [
@@ -8759,7 +8759,7 @@
       ]
     },
     "System.Globalization.Extensions/4.3.0": {
-      "sha512": "FhKmdR6MPG+pxow6wGtNAWdZh7noIOpdD5TwQ3CprzgIE1bBBoim0vbR1+AWsWjQmU7zXHgQo4TWSP6lCeiWcQ==",
+      "sha512": "5in7/mMloQBIvACKJLnTUTWAjSUQINhP4Tj4qbuQmtEQYyIeAhfltwGeVZUnq6N1YWQkqSGK4cnMHR7VdzNtoA==",
       "type": "package",
       "path": "system.globalization.extensions/4.3.0",
       "files": [
@@ -9729,7 +9729,7 @@
       ]
     },
     "System.Reflection.Emit/4.3.0": {
-      "sha512": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+      "sha512": "tavuxt1Ck0cJSN+mwQnC/xpPspUPUOnVaHMadWU5WkzERa6Xwbh5KGv/GSxhs40lQelfVvaff8ykt09dQE6y6A==",
       "type": "package",
       "path": "system.reflection.emit/4.3.0",
       "files": [
@@ -10706,7 +10706,7 @@
       ]
     },
     "System.Security.Claims/4.3.0": {
-      "sha512": "P/+BR/2lnc4PNDHt/TPBAWHVMLMRHsyYZbU1NphW4HIWzCggz8mJbTQQ3MKljFE7LS3WagmVFuBgoLcFzYXlkA==",
+      "sha512": "Cyz2SZb5gwZJzaOHL4pY6WYxAdynPOt4UmZaiJs+OhMxe03Iu6VcNCVAw5/96MnRDlJnlqKPnw5fzvY5jDKvtQ==",
       "type": "package",
       "path": "system.security.claims/4.3.0",
       "files": [
@@ -10848,7 +10848,7 @@
       ]
     },
     "System.Security.Cryptography.Csp/4.3.0": {
-      "sha512": "X4s/FCkEUnRGnwR3aSfVIkldBmtURMhmexALNTwpjklzxWU7yjMk7GHLKOZTNkgnWnE0q7+BCf9N2LVRWxewaA==",
+      "sha512": "QTtXXJXYzOqxAvGsrxiXrfQWaPCskbUeOhQm+QM3lnjHmvbj7bVqcdGbkVpApDE64bDOZOs5Mbza6WLqm1LKkw==",
       "type": "package",
       "path": "system.security.cryptography.csp/4.3.0",
       "files": [
@@ -10920,7 +10920,7 @@
       ]
     },
     "System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "h4CEgOgv5PKVF/HwaHzJRiVboL2THYCou97zpmhjghx5frc7fIvlkY1jL+lnIQyChrJDMNEXS6r7byGif8Cy4w==",
+      "sha512": "HnHTbIGeJLRXRLm/UNlJMV8l1L5LCbkbubwPIxWag0o0P4gDBuXQ6BdRfQzPbqckizx9dzNXRdo4qeqH8fEh3Q==",
       "type": "package",
       "path": "system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -11095,7 +11095,7 @@
       ]
     },
     "System.Security.Principal/4.3.0": {
-      "sha512": "I1tkfQlAoMM2URscUtpcRo/hX0jinXx6a/KUtEQoz3owaYwl3qwsO8cbzYVVnjxrzxjHo3nJC+62uolgeGIS9A==",
+      "sha512": "a4wRioS3XcPe4AUJ9QvTCfI9BXjIYlYnI1yVGM6A9M54QZRD+G55pEu8IPP2WN/A2TL8q7z2IkYE32aH/xJngw==",
       "type": "package",
       "path": "system.security.principal/4.3.0",
       "files": [
@@ -11682,12 +11682,11 @@
       ]
     },
     "System.Threading.Tasks.Parallel/4.3.0": {
-      "sha512": "cbjBNZHf/vQCfcdhzx7knsiygoCKgxL8mZOeocXZn5gWhCdzHIq6bYNKWX0LAJCWYP7bds4yBK8p06YkP0oa0g==",
+      "sha512": "GsUfepV1olHvMlGpPsInMampvoT1WhlxsYMKxXkKm5GwLC9TNv0GzlbbXIEJ5GoZ0wHONg/YhuJxCHeanK9hbg==",
       "type": "package",
       "path": "system.threading.tasks.parallel/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11739,7 +11738,7 @@
       ]
     },
     "System.Threading.Thread/4.3.0": {
-      "sha512": "OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
+      "sha512": "/TH5xK2NGnXsJRQl+RJk9mLT9rCoyyILndbIv5iaHz3LS1XujmqvXsQVnBH8MJfRCs0lBN7Oq8s4K7yzsrWNNA==",
       "type": "package",
       "path": "system.threading.thread/4.3.0",
       "files": [
@@ -12156,13 +12155,7 @@
         "netcoreapp2.2"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
@@ -12197,10 +12190,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-preview8-013656\\RuntimeIdentifierGraph.json"
       }
     }
   }

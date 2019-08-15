@@ -79,8 +79,7 @@ namespace Socks
                     marker = "???"
                 }
             };
-
-
+            
             return sizes;
         }
 
