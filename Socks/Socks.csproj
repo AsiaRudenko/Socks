@@ -6,4 +6,8 @@
     <StartupObject>Socks.Program</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="GitVersionTask" Version="5.0.0-*" PrivateAssets="All" />
+  </ItemGroup>
+
 </Project>
